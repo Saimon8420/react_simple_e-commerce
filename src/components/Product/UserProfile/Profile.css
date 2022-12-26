@@ -1,0 +1,11 @@
+.profile-container {
+    background-color: blanchedalmond;
+    margin-top: 90px;
+    height: 80vh;
+    padding: 10px;
+}
+
+.display-info {
+    padding: 10px;
+    border: 2px solid red;
+}

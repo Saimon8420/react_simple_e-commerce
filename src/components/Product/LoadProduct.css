@@ -1,0 +1,125 @@
+.home-container {
+    margin-top: 60px;
+    background-color: blanchedalmond;
+}
+
+.display {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filter-container {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(251, 4, 4, 0.295) 0px 1px 3px 0px, rgba(47, 59, 72, 0.267) 0px 0px 0px 1px;
+    border-radius: 5px;
+    background-color: white;
+    width: 80%;
+}
+
+.filter-container button {
+    border: none;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+
+.filter-container button:hover {
+    cursor: pointer;
+    background-color: rgba(138, 131, 131, 0.834);
+}
+
+.filter-container>div>h3 {
+    border-bottom: 2px solid red;
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:576px) {
+    .home-container {
+        margin-top: 90px;
+        padding-bottom: 10%;
+    }
+
+    .display {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        width: 100%;
+    }
+
+    .filter-container p {
+        border: 2px solid rgba(255, 166, 0, 0.678);
+        width: 80%;
+        margin: 0 auto;
+        padding: 2px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2px;
+    }
+
+    .filter-container button,
+    input {
+        border: none;
+        outline: none;
+    }
+
+    .filter-container button {
+        margin-left: 5px;
+        border-radius: 3px;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .not-found {
+        padding-bottom: 100%;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:978px) {
+    .display {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        width: 100%;
+    }
+
+    .filter-container button,
+    input {
+        border: none;
+        outline: none;
+    }
+
+    .filter-container button {
+        margin-left: 10px;
+        border-radius: 3px;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
